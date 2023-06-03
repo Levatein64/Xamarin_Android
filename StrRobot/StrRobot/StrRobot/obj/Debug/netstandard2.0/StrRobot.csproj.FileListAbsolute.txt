@@ -1,0 +1,15 @@
+D:\Document\C#\android\StrRobot\StrRobot\StrRobot\bin\Debug\netstandard2.0\StrRobot.deps.json
+D:\Document\C#\android\StrRobot\StrRobot\StrRobot\bin\Debug\netstandard2.0\StrRobot.dll
+D:\Document\C#\android\StrRobot\StrRobot\StrRobot\bin\Debug\netstandard2.0\StrRobot.pdb
+D:\Document\C#\android\StrRobot\StrRobot\StrRobot\obj\Debug\netstandard2.0\StrRobot.csproj.AssemblyReference.cache
+D:\Document\C#\android\StrRobot\StrRobot\StrRobot\obj\Debug\netstandard2.0\StrRobot.GeneratedMSBuildEditorConfig.editorconfig
+D:\Document\C#\android\StrRobot\StrRobot\StrRobot\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\Document\C#\android\StrRobot\StrRobot\StrRobot\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+D:\Document\C#\android\StrRobot\StrRobot\StrRobot\obj\Debug\netstandard2.0\StrRobot.AssemblyInfoInputs.cache
+D:\Document\C#\android\StrRobot\StrRobot\StrRobot\obj\Debug\netstandard2.0\StrRobot.AssemblyInfo.cs
+D:\Document\C#\android\StrRobot\StrRobot\StrRobot\obj\Debug\netstandard2.0\StrRobot.csproj.CoreCompileInputs.cache
+D:\Document\C#\android\StrRobot\StrRobot\StrRobot\obj\Debug\netstandard2.0\XamlC.stamp
+D:\Document\C#\android\StrRobot\StrRobot\StrRobot\obj\Debug\netstandard2.0\StrRobot.dll
+D:\Document\C#\android\StrRobot\StrRobot\StrRobot\obj\Debug\netstandard2.0\refint\StrRobot.dll
+D:\Document\C#\android\StrRobot\StrRobot\StrRobot\obj\Debug\netstandard2.0\StrRobot.pdb
+D:\Document\C#\android\StrRobot\StrRobot\StrRobot\obj\Debug\netstandard2.0\ref\StrRobot.dll

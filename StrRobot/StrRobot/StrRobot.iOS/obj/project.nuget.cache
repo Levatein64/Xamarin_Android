@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "M0fy9c6gcIp33MiNoRlval37+bzQsPokJCWiK/RDvCRjeetjy1UoQ2tgQBknrMcGjkmZrKlv6ozIW0MDkjVyrg==",
+  "success": true,
+  "projectFilePath": "D:\\Document\\C#\\android\\StrRobot\\StrRobot\\StrRobot.iOS\\StrRobot.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Levatein\\.nuget\\packages\\plugin.ble\\2.1.3\\plugin.ble.2.1.3.nupkg.sha512",
+    "C:\\Users\\Levatein\\.nuget\\packages\\skiachart.forms\\1.2.50\\skiachart.forms.1.2.50.nupkg.sha512",
+    "C:\\Users\\Levatein\\.nuget\\packages\\skiasharp\\1.68.1.1\\skiasharp.1.68.1.1.nupkg.sha512",
+    "C:\\Users\\Levatein\\.nuget\\packages\\skiasharp.views\\1.68.1.1\\skiasharp.views.1.68.1.1.nupkg.sha512",
+    "C:\\Users\\Levatein\\.nuget\\packages\\skiasharp.views.forms\\1.68.1.1\\skiasharp.views.forms.1.68.1.1.nupkg.sha512",
+    "C:\\Users\\Levatein\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
+    "C:\\Users\\Levatein\\.nuget\\packages\\xamarin.essentials\\1.7.0\\xamarin.essentials.1.7.0.nupkg.sha512",
+    "C:\\Users\\Levatein\\.nuget\\packages\\xamarin.forms\\5.0.0.2196\\xamarin.forms.5.0.0.2196.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:chartView="clr-namespace:SkiaChart.Views;assembly=SkiaChart"
+             xmlns:chart="clr-namespace:SkiaChart.Charts;assembly=SkiaChart"
+             x:Class="StrRobot.MainPage">
+    <ContentPage Title="SETTING">
+        <StackLayout>
+            <Label x:Name="SETTINGLable" Text="Monitoring Data" />
+            <Frame >
+                <StackLayout>
+                    <chartView:ChartCanvas x:TypeArguments="chart:LineChart" 
+                                           Chart="{Binding LineChart}"
+                                           GridColor="{Binding GridColor}"
+                                           GridLines="10"
+                                           CanShowLegend="True"
+                                           HeightRequest="230" />                    
+                </StackLayout>
+            </Frame>
+            <StackLayout Orientation="Horizontal">
+                <Button x:Name="SCAN_Button"
+                        Text="SCAN Device"
+                        WidthRequest="190"
+                        Margin="2,0,0,0"
+                        Clicked="SCAN_Button_Clicked" />
+                <Button x:Name="Disconnect_Button" Text="Disconnect"  WidthRequest="190" Clicked="Disconnect_Button_Clicked" />
+            </StackLayout>
+
+            <Frame>
+                <StackLayout>
+                    <ScrollView Orientation="Vertical" >
+                        <ListView x:Name="FoundBLEDevice" Footer="" ItemTapped="BLE_List" HeightRequest="80"/>
+                    </ScrollView>
+                    <ActivityIndicator x:Name="IsBusyIndicator"
+                           Scale="0.3" />
+                </StackLayout>                
+            </Frame>
+
+
+            <StackLayout Orientation="Horizontal">
+                <Entry x:Name="Input_Torque" Placeholder="Enter Torque" PlaceholderColor="Gray" VerticalOptions="Center" 
+                   TranslationX="120" HeightRequest="40" WidthRequest="120" />
+                <Label Text="Nm" FontSize="20" Margin="0,6,0,0" TextColor="Black" TranslationX="120"/>
+            </StackLayout>
+            <Button x:Name="L2L" Text="Measure Lock to Lock" HeightRequest="40" Clicked="L2L_Clicked" />
+            <Button Text="Pause" HeightRequest="40" Clicked="Pause" />
+            <Button Text="Proceed to Test" HeightRequest="40" Clicked="Return_to_zero" />
+            <Button x:Name="R2Z" Text="Return to Zero" HeightRequest="40" Clicked="Return_to_zero" />
+            <Button Text="Motor OFF" BackgroundColor="RED" TextColor="White" HeightRequest="40" Clicked="Motor_OFF" />
+        </StackLayout>
+    </ContentPage>
+    <ContentPage Title="CONST STR">
+        <StackLayout>
+            <Label x:Name="ConstLable" Text="Monitoring Data" />
+            <Frame >
+                <StackLayout>
+                    <chartView:ChartCanvas x:TypeArguments="chart:LineChart" HeightRequest="230" />
+                </StackLayout>
+                
+            </Frame>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Veloctiy (0.5~1.8)" FontSize="15" Margin="5,5,0,0"/>
+                <Entry x:Name="Velocity" Placeholder="0.5" PlaceholderColor="Gray" FontSize="15" Margin="180,0,0,0" />
+                <Label Text="rev/s" FontSize="15" Margin="0,10,0,0"/>           
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Range (0~50)" FontSize="15" Margin="5,5,0,0"/>
+                <Entry x:Name="Range" Placeholder="0" PlaceholderColor="Gray" FontSize="15" Margin="207.5,0,0,0" />
+                <Label Text="%" FontSize="15" Margin="0,10,0,0"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Number of Cycle (1~255)" FontSize="15" Margin="5,5,0,0"/>
+                <Entry x:Name="ConstCycle" Placeholder="1" PlaceholderColor="Gray" FontSize="15" Margin="132,0,0,0" />
+                <Label Text="Turn" FontSize="15" Margin="0,10,0,0"/>
+            </StackLayout>
+            <Button Text="Start Steering" Clicked="CsntStr" />
+            <Button Text="Pause" Clicked="Pause" />
+            <Button Text="Return to Zero" Clicked="Return_to_zero"  />
+            <Button Text="Motor OFF" BackgroundColor="RED" TextColor="White" Clicked="Motor_OFF" />
+        </StackLayout>
+
+
+    </ContentPage>
+    <ContentPage Title="SINE STR">
+        <StackLayout>
+            <Label x:Name="SineLable" Text="Monitoring Data" />
+            <Frame >
+                <StackLayout>
+                    <chartView:ChartCanvas x:TypeArguments="chart:LineChart" HeightRequest="230" />
+
+                </StackLayout>
+            </Frame>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Initial Angle (0~100)" FontSize="15" Margin="5,10,0,0"/>
+                <Entry x:Name="Angle" Placeholder="0" PlaceholderColor="Gray" Margin="180,0,0,0" FontSize="15"  />
+                <Label Text="%" FontSize="15" Margin="0,10,0,0"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Sine Amplitude(0~450)" FontSize="15" Margin="5,10,0,0"/>
+                <Label Text="±" FontSize="15" Margin="146,10,0,0"/>
+                <Entry x:Name="Amplitude" Placeholder="0" PlaceholderColor="Gray" Margin="0,0,0,0" FontSize="15"  />
+                <Label Text="°" FontSize="15" Margin="0,10,0,0"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Sine Frequency (0 ~ 2.55)" FontSize="15" Margin="5,5,0,0"/>
+                <Entry x:Name="Frequency" Placeholder="0" PlaceholderColor="Gray" Margin="149,0,0,0" FontSize="15"  />
+                <Label Text="Hz" FontSize="15" Margin="0,10,0,0"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Number of Cycle (1~255)" FontSize="15" Margin="5,5,0,0"/>
+                <Entry x:Name="SineCycle" Placeholder="1" PlaceholderColor="Gray" Margin="147,0,0,0" FontSize="15"  />
+                <Label Text="Turn" FontSize="15" Margin="0,10,0,0"/>
+            </StackLayout>
+            <Button Text="Start Steering" Clicked="SineStr" />
+            <Button Text="Pause" Clicked="Pause" />
+            <Button Text="Return to Zero" Clicked="Return_to_zero" />
+            <Button Text="Motor OFF" BackgroundColor="RED" TextColor="White" Clicked="Motor_OFF" />
+        </StackLayout>
+
+
+    </ContentPage>
+
+
+
+</TabbedPage>
